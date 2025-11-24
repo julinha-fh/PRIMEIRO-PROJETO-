@@ -1,0 +1,84 @@
+/* --- 1. RESET E ESTILO GERAL --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* O Box Model em ação: padding e borda não quebram o layout! */
+}
+
+body {
+    background-color: #030303; /* Fundo escuro */
+    color: #faf7fa; /* Texto branco */
+    font-family: 'Roboto', sans-serif;
+   
+    /* Ativa o Flexbox no Body para CENTRALIZAR O CONTAINER */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    min-height: 100vh; /* Garante que ocupe a altura total da tela */
+}
+
+/* --- 2. CONTAINER E PERFIL --- */
+.container {
+    width: 90%; /* Largura em celulares */
+    max-width: 600px; /* Limite em telas grandes */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto e a foto */
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Transforma a foto em um CÍRCULO */
+    margin-bottom: 10px;
+    border: 3px solid #0f0f0f; /* Uma borda de destaque */
+}
+
+.perfil h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+/* --- 3. ESTILO DOS BOTÕES (LINKS) --- */
+
+.links {
+    margin-top: 30px; /* Espaço entre o perfil e os botões */
+    display: flex; /* Transforma em Flex Container */
+    flex-direction: column; /* Faz os botões ficarem um embaixo do outro (coluna) */
+    gap: 15px; /* Espaço entre os botões */
+}
+
+.link-botao {
+    /* Estilo do Botão */
+    background-color: #333;
+    color: #f7f6f8;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold;
+    display: block; /* Faz o link ocupar 100% da largura, como um botão */
+   
+    /* Centraliza o ícone e o texto */
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+   
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+/* Espaço para o Ícone */
+.link-botao i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* --- 4. CORES ESPECÍFICAS E HOVER --- */
+
+.link-botao:hover {
+    background-color: #980c0c; /* Efeito ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação sutil */
+}
+
+/* Cores das Redes Sociais */
+.instagram { background: #e21791; }
+.linkedin { background: #8f3099; }
+.github { background: #7724a8; }
+.whatsapp { background: #24296a; }
